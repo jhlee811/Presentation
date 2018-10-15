@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title># Introduction to DevOps</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown data-separator="---">
+					<script type="text/template">
+
+# Introduction to DevOps
+Lee Ji Hyun
+---
+<!-- .slide: data-background-image="img/devops_diagram.png" -->
+<!-- .slide: data-background-position="center" -->
+<!-- .slide: data-background-size="contain"  -->
+<!-- .slide: data-background-repeat="no-repeat" -->
+---
+# Definition
+DevOps represents a change in IT culture, focusing on rapid IT service delivery through the adoption of agile, lean practices in the context of a system-oriented approach. DevOps emphasizes people (and culture), and seeks to improve collaboration between operations and development teams. 
+ * https://www.gartner.com/it-glossary/devops/
+---
+# Definition
+DevOps is a set of practices intended to reduce the time between committing a change to a system and the change being placed into normal production, while ensuring high quality
+ * https://en.wikipedia.org/wiki/DevOps#Definitions_and_history
+---
+# Goals
+  * Improved deployment frequency
+  * Faster time to market
+  * Lower failure rate of new releases
+  * Shortened lead time between fixes
+  * Faster mean time to recovery
+---
+<!-- .slide: data-background-image="img/devops_toolchain.png" -->
+<!-- .slide: data-background-position="center" -->
+<!-- .slide: data-background-size="contain"  -->
+<!-- .slide: data-background-repeat="no-repeat" -->
+---
+# DevOps Process
+  * Source code management
+  * Source code review
+  * Configuration management
+  * Build management
+  * Repository management
+  * Release management
+  * Test automation
+---
+# DevOps Process
+  * Continuous integration
+  * Continuous delivery
+  * Continuous deployment
+  * Infrastructure as Code
+  * Application performance monitoring
+  * Routine automation/continuous improvement
+---
+<!-- .slide: data-background-image="img/cicd_table.jpg" -->
+<!-- .slide: data-background-position="center" -->
+<!-- .slide: data-background-size="contain"  -->
+<!-- .slide: data-background-repeat="no-repeat" -->
+---
+# Popular tools
+* Source code management: Git, GitHub, Subversion, and Bitbucket
+* Build management: Maven, Ant, Make, and MSBuild
+* Testing tools: JUnit, Selenium, Cucumber, and QUnit
+* Repository management: Nexus, Artifactory, and Docker hub
+---
+# Popular tools
+* Continuous integration: Jenkins, Bamboo, TeamCity, and Visual Studio
+* Configuration provisioning: Chef, Puppet, Ansible, and Salt
+* Release management: Visual Studio, Serena Release, and StackStorm
+* Cloud: AWS, Azure, OpenShift, and Rackspace
+* Deployment management: Rapid Deploy, Code Deploy, and Elastic box
+---
+# Popular tools
+* Collaboration: Jira, Team Foundation, and Slack
+* BI/Monitoring: Kibana, Elasticsearch, and Nagios
+* Logging: Splunk, Logentries, and Logstash
+* Container: Linux, Docker, Kubernetes, Swam, AWS, and Azure
+---
+<!-- .slide: data-background-image="img/cicd.jpg" -->
+<!-- .slide: data-background-position="center" -->
+<!-- .slide: data-background-size="contain"  -->
+<!-- .slide: data-background-repeat="no-repeat" -->
+---
+<!-- .slide: data-background-image="img/cicd_pipeline.jpg" -->
+<!-- .slide: data-background-position="center" -->
+<!-- .slide: data-background-size="contain"  -->
+<!-- .slide: data-background-repeat="no-repeat" -->
+
+
+
+				    </script>
+				</sectin>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+
+	</body>
+</html>
