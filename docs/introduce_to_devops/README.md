@@ -1,4 +1,4 @@
-# https://jhlee811.github.io/Presentation/introduce_to_devops/#/
+# https://jhlee811.github.io/presentation/introduce_to_devops/#/
 
 
 
